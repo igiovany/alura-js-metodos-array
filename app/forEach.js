@@ -1,6 +1,8 @@
 const insertBooksElement = document.getElementById('livros')
+const totalValueOfAvailableBooksElement = document.getElementById('valor_total_livros_disponiveis')
 
 function showBooksOnScreen(booksList) {
+  totalValueOfAvailableBooksElement.innerHTML = ''
   insertBooksElement.innerHTML = ''
   booksList.forEach(book => {
 
